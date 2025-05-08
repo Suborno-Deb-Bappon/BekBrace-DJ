@@ -7,7 +7,7 @@
 <h1 class="text-center">Product Form</h1>
 <form method="POST" class="jumbotron">
     {% csrf_token %}
-    {{form}}
-    <button class="btn btn-success btn-block" type="submit">Save Product</button>
+    {{form}}  
+    <button type="submit" class="btn btn-success btn-block">Submit</button>  <!-- Submit button with Bootstrap styling -->
 </form>
 {% endblock %}

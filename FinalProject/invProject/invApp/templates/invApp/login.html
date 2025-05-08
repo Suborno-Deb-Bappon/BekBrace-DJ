@@ -1,0 +1,15 @@
+<!-- Extend the base layout from the layout.html -->
+{% extends "invApp/layout.html" %}
+
+{% block title %} Login {% endblock %}
+
+{% block content %}
+<h1 class="text-center">Login</h1>
+<form method="POST" class="jumbotron">
+    {% csrf_token %}
+    {{form}} 
+    <button type="submit" class="btn btn-primary">Login</button>
+    <a href="{% url 'signup' %}" class="btn btn-primary">Sign Up</a> 
+</form>
+
+{% endblock %}
